@@ -24,7 +24,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Apply transitions only to specific properties */
+body {
+  transition: background-color 0.3s ease;
+}
+
+/* Text elements get a faster transition */
+h1, h2, h3, h4, h5, h6, p, a, span, li, button {
+  transition: color 0.15s ease;
 }
 
 html,
