@@ -18,7 +18,7 @@ const SimpleHeader = () => {
           <Link to="/" className={isActive('/')}>home</Link>
           <Link to="/now" className={isActive('/now')}>now</Link>
           <Link to="/projects" className={isActive('/projects')}>projects</Link>
-          <a href="https://mahaprasad003.github.io" className="external-blog" target="_blank" rel="noopener noreferrer">blog</a>
+          <a href="https://mahaprasad.notion.site/BLOG-1b5a2fdfeff6807ab66af24127d8817d?pvs=4" className="external-blog" target="_blank" rel="noopener noreferrer">blog</a>
         </nav>
       </div>
       
