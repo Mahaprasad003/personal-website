@@ -4,6 +4,7 @@ import { initializeTheme, toggleTheme as toggleThemeUtil } from '../utils/themeT
 
 const Layout = ({ children }) => {
   const [theme, setTheme] = useState('dark');
+  const [particles, setParticles] = useState([]);
   const location = useLocation();
   
   // Initialize theme on first load
@@ -21,6 +22,25 @@ const Layout = ({ children }) => {
   const handleToggleTheme = () => {
     const newTheme = toggleThemeUtil(theme);
     setTheme(newTheme);
+    
+    // Create particles
+    const newParticles = Array.from({ length: 20 }, (_, i) => ({
+      id: i,
+      x: Math.random() * window.innerWidth,
+      y: Math.random() * window.innerHeight,
+      size: Math.random() * 4 + 2,
+      speedX: (Math.random() - 0.5) * 4,
+      speedY: (Math.random() - 0.5) * 4,
+      opacity: 1,
+      rotation: Math.random() * 360
+    }));
+    
+    setParticles(newParticles);
+    
+    // Remove particles after animation
+    setTimeout(() => {
+      setParticles([]);
+    }, 1500);
   };
   
   return (
@@ -34,6 +54,23 @@ const Layout = ({ children }) => {
           {theme === 'light' ? '🌙' : '☀️'}
         </button>
       </div>
+
+      {particles.map(particle => (
+        <div
+          key={particle.id}
+          className="theme-particle"
+          style={{
+            left: particle.x + 'px',
+            top: particle.y + 'px',
+            width: particle.size + 'px',
+            height: particle.size + 'px',
+            opacity: particle.opacity,
+            '--speedX': `${particle.speedX * 50}px`,
+            '--speedY': `${particle.speedY * 50}px`,
+            '--rotation': `${particle.rotation}deg`
+          }}
+        />
+      ))}
       
       <style jsx>{`
         .layout {
@@ -72,6 +109,34 @@ const Layout = ({ children }) => {
         .theme-toggle-floating:hover {
           transform: translateY(-3px);
           background-color: var(--accent-secondary);
+        }
+
+        .theme-particle {
+          position: fixed;
+          background-color: var(--accent-primary);
+          border-radius: 50%;
+          pointer-events: none;
+          z-index: 99;
+          animation: particle-fade 1.5s ease-out forwards,
+                     particle-move 1.5s linear forwards;
+        }
+
+        @keyframes particle-fade {
+          0% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+
+        @keyframes particle-move {
+          0% {
+            transform: translate(0, 0) rotate(0deg);
+          }
+          100% {
+            transform: translate(var(--speedX), var(--speedY)) rotate(var(--rotation));
+          }
         }
       `}</style>
     </div>

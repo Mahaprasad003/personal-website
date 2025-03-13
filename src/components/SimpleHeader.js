@@ -1,24 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const SimpleHeader = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   
   // Check if the current path matches the link
   const isActive = (path) => {
     return location.pathname === path ? 'active' : '';
   };
+
+  // Close menu when route changes
+  React.useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location.pathname]);
   
   return (
     <header className="simple-header">
       <div className="header-container">
         <Link to="/" className="logo">Mahaprasad.</Link>
         
-        <nav className="main-nav">
+        <button 
+          className={`burger-menu ${isMenuOpen ? 'open' : ''}`}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
           <Link to="/" className={isActive('/')}>home</Link>
           <Link to="/now" className={isActive('/now')}>now</Link>
           <Link to="/projects" className={isActive('/projects')}>projects</Link>
-          <a href="https://mahaprasad.notion.site/BLOG-1b5a2fdfeff6807ab66af24127d8817d?pvs=4" className="external-blog" target="_blank" rel="noopener noreferrer">blog</a>
+          <a href="https://mahaprasad.notion.site/BLOG-1b5a2fdfeff6807ab66af24127d8817d" className="external-blog" target="_blank" rel="noopener noreferrer">blog</a>
         </nav>
       </div>
       
@@ -66,14 +82,66 @@ const SimpleHeader = () => {
         .main-nav a:after {
           display: none;
         }
+
+        .burger-menu {
+          display: none;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 24px;
+          height: 20px;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          padding: 0;
+          z-index: 11;
+        }
+
+        .burger-menu span {
+          width: 100%;
+          height: 2px;
+          background-color: var(--text-primary);
+          transition: all 0.3s ease;
+        }
+
+        .burger-menu.open span:nth-child(1) {
+          transform: translateY(9px) rotate(45deg);
+        }
+
+        .burger-menu.open span:nth-child(2) {
+          opacity: 0;
+        }
+
+        .burger-menu.open span:nth-child(3) {
+          transform: translateY(-9px) rotate(-45deg);
+        }
         
         @media (max-width: 768px) {
           .header-container {
             padding: 0 1rem;
           }
           
+          .burger-menu {
+            display: flex;
+          }
+
           .main-nav {
-            gap: 1.5rem;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 70%;
+            height: 100vh;
+            background-color: var(--bg-primary);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            transition: right 0.3s ease;
+            z-index: 10;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+          }
+
+          .main-nav.open {
+            right: 0;
           }
           
           .logo {
