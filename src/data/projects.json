@@ -1,0 +1,18 @@
+[
+    {
+      "id": "project1",
+      "title": "Placeholder Project 1",
+      "description": "A placeholder description for Project 1.",
+      "githubUrl": "https://github.com/yourusername/weather-dashboard",
+      "tags": ["Transformers", "ChatGPT"]
+    },
+    {
+      "id": "project2",
+      "title": "Placeholder Project 2",
+      "description": "A placeholder description for Project 2.",
+      "githubUrl": "https://github.com/yourusername/task-manager-api",
+      "tags": ["Node.js", "Express", "MongoDB"]
+    }
+  ]
+
+
