@@ -8,8 +8,8 @@ const Now = () => {
       
       <div className="container fade-in">
         <div className="now-header">
-          <h1>what I'm Doing Now</h1>
-          <p className="last-updated">last updated: March 11, 2025</p>
+          <h1>what i'm doing now</h1>
+          <p className="last-updated">last updated: march 11, 2025</p>
         </div>
         
         <div className="now-content">
