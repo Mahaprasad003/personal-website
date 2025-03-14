@@ -14,14 +14,14 @@ const Now = () => {
         
         <div className="now-content">
           <section className="now-section">
-            <h2>current Focus</h2>
+            <h2>current focus</h2>
             <p>
-              working on academics and personal projects. currently reading Understanding Deep Learning.
+              working on academics and personal projects. currently reading understanding deep learning.
             </p>
           </section>
           
           <section className="now-section">
-            <h2>Learning</h2>
+            <h2>learning</h2>
             <p>
               i'm taking a deep dive into machine learning and deep learning. I'm also 
               learning about computer vision and natural language processing.
