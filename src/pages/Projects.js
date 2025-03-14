@@ -28,10 +28,9 @@ const Projects = () => {
       
       <div className="container fade-in">
         <div className="projects-header">
-          <h1>Projects</h1>
+          <h1>projects</h1>
           <p className="projects-description">
-            A selection of my recent work and personal projects. Each project is 
-            built with attention to detail, clean code, and thoughtful user experience.
+            a selection of my recent work and personal projects.
           </p>
         </div>
         

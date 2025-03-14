@@ -1,17 +1,17 @@
 [
     {
       "id": "project1",
-      "title": "Placeholder Project 1",
-      "description": "A placeholder description for Project 1.",
+      "title": "placeholder project 1",
+      "description": "A placeholder description for project 1.",
       "githubUrl": "https://github.com/yourusername/weather-dashboard",
-      "tags": ["Transformers", "ChatGPT"]
+      "tags": ["transformers", "chatgpt"]
     },
     {
       "id": "project2",
-      "title": "Placeholder Project 2",
-      "description": "A placeholder description for Project 2.",
+      "title": "placeholder project 2",
+      "description": "A placeholder description for project 2.",
       "githubUrl": "https://github.com/yourusername/task-manager-api",
-      "tags": ["Node.js", "Express", "MongoDB"]
+      "tags": ["node.js", "express", "mongodb"]
     }
   ]
 

@@ -8,10 +8,10 @@ const Home = () => {
       
       <div className="container fade-in">
         <div className="home-content">
-          <h1 className="tagline">jacked nerd who codes.</h1>
+          <h1 className="tagline">gradient descending into AI 🤖</h1>
           
           <div className="bio">
-            <p>pursuing postgrad in talking to machines.</p>
+            <p>pursuing postgrad in data science.</p>
             <p>part data scientist, part philosopher, part weightlifter.</p>
             <p>aristotle would've called me a polymath, my mom calls me indecisive.</p>
           </div>
@@ -58,7 +58,7 @@ const Home = () => {
         }
         
         .tagline {
-          font-size: 3rem;
+          font-size: 2.5rem;
           margin-bottom: 2.5rem;
           font-weight: 700;
         }
