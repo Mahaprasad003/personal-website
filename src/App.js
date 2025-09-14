@@ -8,6 +8,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import Now from './pages/Now';
 import Projects from './pages/Projects';
+import Blog from './pages/Blog';
 
 // Styles
 import './styles/globals.css';
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/now" element={<Now />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="*" element={<div>Page not found</div>} />
         </Routes>
       </Layout>

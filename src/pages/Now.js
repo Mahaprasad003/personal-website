@@ -60,11 +60,11 @@ const Now = () => {
         .container {
           max-width: 800px;
           margin: 0 auto;
-          margin-top: 3rem;
+          margin-top: 2.5rem;
           padding: 0 1.5rem;
           display: grid;
           grid-template-columns: 1fr 2fr;
-          gap: 3rem;
+          gap: 2.5rem;
           align-items: start;
         }
         
@@ -73,11 +73,7 @@ const Now = () => {
           top: 2rem;
         }
         
-        h1 {
-          font-size: 3rem;
-          margin-bottom: 0.75rem;
-          font-weight: 700;
-        }
+  h1 { font-size: 2.25rem; margin-bottom: 0.75rem; font-weight:700 }
         
         .last-updated {
           color: var(--text-secondary);
@@ -93,11 +89,7 @@ const Now = () => {
           margin-bottom: 2.5rem;
         }
         
-        .now-section h2 {
-          font-size: 1.5rem;
-          margin-bottom: 1rem;
-          color: var(--accent-primary);
-        }
+  .now-section h2 { margin-bottom: 0.75rem; color: var(--accent-primary) }
         
         .now-section p {
           line-height: 1.7;
@@ -113,27 +105,11 @@ const Now = () => {
         }
         
         @media (max-width: 768px) {
-          .container {
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            padding: 0 1rem;
-          }
-          
-          .now-header {
-            position: static;
-          }
-          
-          h1 {
-            font-size: 2.5rem;
-          }
-          
-          .now-section h2 {
-            font-size: 1.25rem;
-          }
-          
-          .now-section p {
-            font-size: 1rem;
-          }
+          .container { grid-template-columns:1fr; gap:1.75rem; padding:0 1rem }
+          .now-header { position: static }
+          h1 { font-size: 2rem }
+          .now-section h2 { font-size: 1rem }
+          .now-section p { font-size: 1rem }
         }
       `}</style>
     </div>

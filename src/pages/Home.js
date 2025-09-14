@@ -53,15 +53,11 @@ const Home = () => {
         }
         
         .home-content {
-          margin-top: 4rem;
+          margin-top: 3.25rem;
           text-align: left;
         }
         
-        .tagline {
-          font-size: 2.5rem;
-          margin-bottom: 2.5rem;
-          font-weight: 700;
-        }
+  .tagline { margin-bottom: 1.75rem; font-weight: 700 }
         
         .bio {
           margin-bottom: 3rem;
@@ -97,22 +93,10 @@ const Home = () => {
         }
         
         @media (max-width: 768px) {
-          .home-content {
-            margin-top: 2rem;
-          }
-          
-          .tagline {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-          }
-          
-          .bio {
-            font-size: 1rem;
-          }
-          
-          .container {
-            padding: 0 1rem;
-          }
+          .home-content { margin-top: 2rem }
+          .tagline { font-size: 1.75rem; margin-bottom: 1rem }
+          .bio { font-size: 1rem }
+          .container { padding: 0 1rem }
         }
       `}</style>
     </div>

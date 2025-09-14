@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "title": "Why I switched to Rust for systems tooling",
+      "date": "2025-08-10",
+      "excerpt": "A short look at how Rust improved reliability and speed for small CLI tools.",
+      "substackUrl": "https://yourname.substack.com/p/why-i-switched-to-rust",
+      "tags": ["rust","systems","programming"]
+    },
+    {
+      "title": "Designing resilient front-end architecture",
+      "date": "2025-06-02",
+      "excerpt": "Principles and patterns I use to keep front-end code maintainable.",
+      "substackUrl": "https://yourname.substack.com/p/resilient-frontend-architecture",
+      "tags": ["frontend","architecture","react"]
+    }
+  ]
+}
