@@ -1,17 +1,17 @@
 [
     {
       "id": "project1",
-      "title": "placeholder project 1",
-      "description": "A placeholder description for project 1.",
-      "githubUrl": "https://github.com/yourusername/weather-dashboard",
-      "tags": ["transformers", "chatgpt"]
+      "title": "Insecti-sight: Insights and classification models on Southern states of India",
+      "description": "A detailed study of insects from Kisan Call Center (KCC) dataset.",
+      "githubUrl": "#",
+      "tags": ["scikit-learn", "matplotlib", "XGBoost", "Decision Trees"]
     },
     {
       "id": "project2",
-      "title": "placeholder project 2",
-      "description": "A placeholder description for project 2.",
-      "githubUrl": "https://github.com/yourusername/task-manager-api",
-      "tags": ["node.js", "express", "mongodb"]
+      "title": "Hybrid W-PINN for Merton Jump-Diffusion model to predict option prices",
+      "description": "Adapted a wavelet-pinn to solve the merton jump-diffusion.",
+      "githubUrl": "#",
+      "tags": ["Pytorch"]
     }
   ]
 

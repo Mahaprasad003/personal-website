@@ -9,39 +9,37 @@ const Now = () => {
       <div className="container fade-in">
         <div className="now-header">
           <h1>what i'm doing now</h1>
-          <p className="last-updated">last updated: march 11, 2025</p>
+          <p className="last-updated">last updated: September 14, 2025</p>
         </div>
         
         <div className="now-content">
           <section className="now-section">
             <h2>current focus</h2>
             <p>
-              working on academics and personal projects. currently reading understanding deep learning.
+              working on personal projects. looking for internships.
             </p>
           </section>
           
           <section className="now-section">
             <h2>learning</h2>
             <p>
-              i'm taking a deep dive into machine learning and deep learning. I'm also 
-              learning about computer vision and natural language processing.
+              learning about llms. implementing rag pipelines. and writing research papers.
             </p>
           </section>
           
           <section className="now-section">
             <h2>reading</h2>
             <p>
-              i'm currently reading understanding deep learning, and a few other books.
+              currently reading AI engineering by Chip Huyen.
             </p>
           </section>
           
-          {/* <section className="now-section">
+          <section className="now-section">
             <h2>Personal Life</h2>
             <p>
-              I've started a daily meditation practice to help maintain focus and reduce 
-              stress. I'm also training for a half-marathon that's happening in June.
+              trying to reduce screen time. and also be more mindful of where i spend my time.
             </p>
-          </section> */}
+          </section>
           
           <div className="now-note">
             <p>

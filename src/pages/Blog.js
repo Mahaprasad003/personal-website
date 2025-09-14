@@ -10,7 +10,7 @@ const Blog = () => {
       <div className="container fade-in">
         <div className="blog-header">
           <h1>writing</h1>
-          <p className="last-updated">external posts listed here; links open on Substack</p>
+          <p className="last-updated">all my posts written on newsletter and blogs</p>
         </div>
 
   <div className="blog-content scroll-wrap">

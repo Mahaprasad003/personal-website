@@ -1,18 +1,53 @@
 {
   "posts": [
     {
-      "title": "Why I switched to Rust for systems tooling",
-      "date": "2025-08-10",
-      "excerpt": "A short look at how Rust improved reliability and speed for small CLI tools.",
-      "substackUrl": "https://yourname.substack.com/p/why-i-switched-to-rust",
-      "tags": ["rust","systems","programming"]
+      "title": "LLM4N3:Fixing a broken memory with LSTMs",
+      "date": "2025-09-12",
+      "excerpt": "Addressing limitations of RNNs, how LSTMs \"remember\" across long-range dependencies, and what's next?",
+      "substackUrl": "https://datapecharcha.substack.com/p/llm4n3fixing-a-broken-memory-with",
+      "tags": ["lstm", "rnn", "llm", "dl"]
     },
     {
-      "title": "Designing resilient front-end architecture",
-      "date": "2025-06-02",
-      "excerpt": "Principles and patterns I use to keep front-end code maintainable.",
-      "substackUrl": "https://yourname.substack.com/p/resilient-frontend-architecture",
-      "tags": ["frontend","architecture","react"]
+      "title": "LLM4N2: Giving words meaning with Neural Networks",
+      "date": "2025-09-05",
+      "excerpt": "Word2Vec, RNNs, usecases, their limitations, and what's next?",
+      "substackUrl": "https://datapecharcha.substack.com/p/llm4n2-giving-words-meaning-with",
+      "tags": ["word2vec", "rnn", "nlp", "neural networks", "llm"]
+    },
+    {
+      "title": "LLM4N1: Why did N-gram models fail?",
+      "date": "2025-08-29",
+      "excerpt": "A brief primer on N-gram models, their applications, and limitations",
+      "substackUrl": "https://datapecharcha.substack.com/p/llm4n1-why-did-n-gram-models-fail",
+      "tags": ["n-gram", "nlp", "language models", "llm"]
+    },
+    {
+      "title": "Why is uv so freaking fast?",
+      "date": "2025-08-22",
+      "excerpt": "Architectural decisions behind uv, hard problems team Astral solved, and so much more",
+      "substackUrl": "https://datapecharcha.substack.com/p/why-is-uv-so-freaking-fast",
+      "tags": ["uv", "python", "rust", "performance", "packaging"]
+    },
+    {
+      "title": "A Data Scientist's Guide to Hypothesis Testing",
+      "date": "2025-08-15",
+      "excerpt": "How do you choose the right test? And why do we need it in the first place?",
+      "substackUrl": "https://datapecharcha.substack.com/p/a-data-scientists-guide-to-hypothesis",
+      "tags": ["statistics", "data science", "hypothesis testing", "A/B testing"]
+    },
+    {
+      "title": "Why does the Central Limit Theorem work?",
+      "date": "2025-08-08",
+      "excerpt": "A brief explanation on what CLT is and why it works.",
+      "substackUrl": "https://datapecharcha.substack.com/p/why-does-the-central-limit-theorem",
+      "tags": ["statistics", "probability", "central limit theorem", "math"]
+    },
+    {
+      "title": "The math that makes ML models work: Maximum likelihood estimation",
+      "date": "2025-05-17",
+      "excerpt": "A primer on how MLE helps us derive the appropriate loss functions",
+      "substackUrl": "https://mahaprasad.notion.site/The-Math-That-Makes-ML-Models-Work-Maximum-Likelihood-Estimation-1f4a2fdfeff680798e25fec44064c49c",
+      "tags": ["machine learning", "mle", "statistics", "math", "loss functions"]
     }
   ]
 }
